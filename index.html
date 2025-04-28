@@ -4,171 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tuttio Soleil 01 Bike</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     body {
-      background: linear-gradient(to bottom right, #0d0d0d, #1a001a);
-      font-family: 'Poppins', sans-serif;
-      color: #eee;
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #d1c4e9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
-    .card {
-      background: #1a1a1a;
-      border-radius: 1.5rem;
-      padding: 2rem;
-      box-shadow: 0 10px 20px rgba(128, 0, 128, 0.4);
-      transition: transform 0.4s, box-shadow 0.4s;
+
+    header {
+      background: linear-gradient(135deg, #6a0dad, #000000);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
-    .card:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 15px 25px rgba(255, 0, 255, 0.5);
+
+    section {
+      background-color: #1c1c1e;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(128, 0, 128, 0.5);
+      animation: slideUp 1s ease;
     }
-    .link-button {
-      background: linear-gradient(45deg, #6a0dad, #b026ff);
-      color: white;
-      padding: 0.6rem 1.4rem;
-      border-radius: 9999px;
+
+    h2 {
+      color: #c084fc;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e879f9;
+      font-size: 1.3rem;
+    }
+
+    .link, a {
+      color: #8b5cf6;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .link:hover, a:hover {
+      color: #d8b4fe;
+    }
+
+    .bike-specs p {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #a78bfa;
+      margin-bottom: 10px;
+    }
+
+    .bike-specs strong {
+      color: #c084fc;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .button {
       display: inline-block;
-      margin-right: 0.5rem;
-      margin-top: 0.5rem;
-      transition: transform 0.3s, background 0.3s;
-      box-shadow: 0 5px 15px rgba(186, 85, 211, 0.6);
-    }
-    .link-button:hover {
-      transform: scale(1.1);
-      background: linear-gradient(45deg, #b026ff, #6a0dad);
-    }
-    .price {
-      color: #ff4de8;
+      margin-top: 10px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #7c3aed, #6b21a8);
+      color: white;
+      border: none;
+      border-radius: 30px;
       font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-      animation: fadeInDown 1s ease forwards;
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(155, 89, 182, 0.6);
     }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      background: linear-gradient(to right, #d946ef, #8b5cf6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    @keyframes fadeInDown {
-      0% {opacity: 0; transform: translateY(-50px);}
-      100% {opacity: 1; transform: translateY(0);}
-    }
+
     @keyframes fadeIn {
       0% {opacity: 0;}
       100% {opacity: 1;}
     }
-    section {
-      animation: fadeIn 1.5s ease;
-    }
-    ul li {
-      margin-bottom: 1rem;
+
+    @keyframes slideUp {
+      0% {transform: translateY(50px); opacity: 0;}
+      100% {transform: translateY(0); opacity: 1;}
     }
   </style>
 </head>
 
-<body class="p-6">
+<body>
 
 <header>
   <h1>Tuttio Soleil 01 Electric Bike</h1>
-  <p class="text-gray-400 mt-2">Custom Build | Upgrades | Legal Kit</p>
 </header>
 
-<main class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+<section class="bike-specs">
+  <h2>Bike Specs:</h2>
+  <p><strong>Top Speed:</strong> 37Mph (60Km/h)</p>
+  <p><strong>Range:</strong> 45 Miles</p>
+  <p><strong>Motor:</strong> 48V 2000W Brushless Motor 200N.m</p>
+  <p><strong>Battery:</strong> 48V 21Ah Lithium-ion Battery</p>
+  <p class="price">1,051.60 GBP</p>
+  <p><strong>Use Code:</strong> "Phethanfix"</p>
+</section>
 
-  <!-- Bike Specs -->
-  <section class="card">
-    <h2 class="text-2xl font-bold mb-4">Bike Specs</h2>
-    <p><strong>Top Speed:</strong> 37Mph (60Km/h)</p>
-    <p><strong>Range:</strong> 45 Miles</p>
-    <p><strong>Motor:</strong> 48V 2000W Brushless Motor 200N.m</p>
-    <p><strong>Battery:</strong> 48V 21Ah Lithium-ion Battery</p>
-    <p class="price text-xl mt-2">1,051.60 GBP</p>
-    <p class="mt-2"><strong>Use Code:</strong> "Phethanfix"</p>
-  </section>
+<section>
+  <h2>Upgrades:</h2>
+  <ul>
+    <li>Bluetooth Dongle – Keenso (GBP 25.85) – <a href="#" class="link">Amazon</a></li>
+    <li>Grips – Worldmotop (GBP 6.00) – <a href="#" class="link">Amazon</a></li>
+    <li>Front Fender – JFG RACING Carbon (GBP 27.03) – <a href="#" class="link">Amazon</a></li>
+    <li>Rear Fender – JFG RACING Carbon (GBP 18.77) – <a href="#" class="link">Amazon</a></li>
+    <li>Number Plate – LINGQI Carbon Plate (GBP 19.52) – <a href="#" class="link">Amazon</a></li>
+    <li>UnderGlow – 4PCS Wireless LED Lights (GBP 12.01) – <a href="#" class="link">Amazon</a></li>
+    <li>Front Plate – Sur Ron Front Plate (GBP 7.89) – <a href="#" class="link">Amazon</a></li>
+    <li>Seat – FG RACING Seat Cover (GBP 18.99) – <a href="#" class="link">Amazon</a></li>
+  </ul>
+</section>
 
-  <!-- Upgrades -->
-  <section class="card">
-    <h2 class="text-2xl font-bold mb-4">Upgrades</h2>
-    <ul>
-      <li><strong>Bluetooth Dongle</strong> (GBP 25.85)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Grips</strong> (GBP 6.00)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Front Fender</strong> (GBP 27.03)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Rear Fender</strong> (GBP 18.77)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Number Plate</strong> (GBP 19.52)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>UnderGlow</strong> (GBP 12.01)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Front Plate</strong> (GBP 7.89)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Seat Cover</strong> (GBP 18.99)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-    </ul>
-  </section>
+<section>
+  <h2>Extras:</h2>
+  <ul>
+    <li>Helmet – Mongoose Full Face (GBP 74.47) – <a href="#" class="link">Amazon</a></li>
+    <li>Gloves – Fox Racing Ranger Gel (GBP 18.73) – <a href="#" class="link">Amazon</a></li>
+    <li>Chest Bag – Running Chest Bag (GBP 26.99) – <a href="#" class="link">Amazon</a></li>
+  </ul>
+</section>
 
-  <!-- Extras -->
-  <section class="card">
-    <h2 class="text-2xl font-bold mb-4">Extras</h2>
-    <ul>
-      <li><strong>Helmet</strong> (GBP 74.47)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Gloves</strong> (GBP 18.73)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Chest Bag</strong> (GBP 26.99)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-    </ul>
-  </section>
+<section>
+  <h2>Legal (UK):</h2>
+  <ul>
+    <li>Headlight – JFG RACING (GBP 33.99) – <a href="#" class="link">Amazon</a></li>
+    <li>Mirrors – 1 Pair Aluminum (GBP 19.99) – <a href="#" class="link">Amazon</a></li>
+    <li>Horn/Control Panel – FSFY Switch (GBP 22.96) – <a href="#" class="link">Amazon</a></li>
+    <li>Rear Brake Light – Tail Brake (GBP 21.99) – <a href="#" class="link">Amazon</a></li>
+    <li>Indicators – Kinstecks Flowing Turn Signals (GBP 17.99) – <a href="#" class="link">Amazon</a></li>
+  </ul>
+</section>
 
-  <!-- Legal Kit -->
-  <section class="card">
-    <h2 class="text-2xl font-bold mb-4">Legal Kit (UK)</h2>
-    <ul>
-      <li>Number Plate</li>
-      <li>Insurance</li>
-      <li>Licence</li>
-      <li>MOT Test</li>
-      <li>VIN</li>
-      <li><strong>Headlight</strong> (GBP 33.99)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Mirrors</strong> (GBP 19.99)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Horn/Control Panel</strong> (GBP 22.96)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Brake Light</strong> (GBP 21.99)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-      <li><strong>Indicators</strong> (GBP 17.99)<br>
-        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
-      </li>
-    </ul>
-  </section>
-  
-<!-- Prices -->
-<section class="card">
-  <h2 class="text-2xl font-bold mb-4">Prices</h2>
+<section>
+  <h2>Prices:</h2>
   <ul>
     <li>Just Bike: <span class="price">1,051.60 GBP</span></li>
     <li>Bike + Upgrades: <span class="price">1,187.66 GBP</span></li>
@@ -178,3 +169,30 @@
     <li>Bike + Upgrades + Extras + Legal Kit: <span class="price">1,424.77 GBP</span></li>
   </ul>
 </section>
+
+<section>
+  <h2>Info:</h2>
+  <p>Every item is available on <a href="https://amazon.co.uk" class="link" target="_blank">Amazon</a> or <a href="https://aliexpress.com" class="link" target="_blank">Aliexpress</a>.</p>
+  <p>The actual bike is available on <a href="https://tuttiosport.com/products/tuttio-soleil01-electric-bike" class="link" target="_blank">Tuttio Sport</a>.</p>
+  <p>This is a good budget build! If you upgrade with a 72V system, supermoto tyres, and a new motor, it gets even crazier.</p>
+</section>
+
+<section>
+  <h2>Videos:</h2>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=46ULECKE5zw" class="link" target="_blank">Phethanfix Video</a></li>
+    <li><a href="https://www.youtube.com/watch?v=0i6LCu_hQro" class="link" target="_blank">Surronster Video</a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Legal Info:</h2>
+  <p>Learn about road legality here:</p>
+  <ul>
+    <li><a href="https://www.youtube.com/watch?v=XgFj8VoRjvA" class="link" target="_blank">E-bike Legal Video 2025</a></li>
+  </ul>
+  <p>To ride legally: add lights, indicators, mirrors, speedometer, horn, VIN registration, MOT if over 3 years, and insurance.</p>
+</section>
+
+</body>
+</html>
