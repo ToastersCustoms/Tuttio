@@ -7,51 +7,76 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #0d0d0d, #1a001a);
+      font-family: 'Poppins', sans-serif;
+      color: #eee;
     }
     .card {
-      background: white;
-      border-radius: 1rem;
+      background: #1a1a1a;
+      border-radius: 1.5rem;
       padding: 2rem;
-      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
+      box-shadow: 0 10px 20px rgba(128, 0, 128, 0.4);
+      transition: transform 0.4s, box-shadow 0.4s;
     }
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 25px rgba(255, 0, 255, 0.5);
     }
     .link-button {
-      background: #3498db;
+      background: linear-gradient(45deg, #6a0dad, #b026ff);
       color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
+      padding: 0.6rem 1.4rem;
+      border-radius: 9999px;
       text-decoration: none;
-      transition: background 0.3s;
+      font-weight: bold;
+      display: inline-block;
       margin-right: 0.5rem;
+      margin-top: 0.5rem;
+      transition: transform 0.3s, background 0.3s;
+      box-shadow: 0 5px 15px rgba(186, 85, 211, 0.6);
     }
     .link-button:hover {
-      background: #2980b9;
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #b026ff, #6a0dad);
     }
     .price {
-      color: #e74c3c;
+      color: #ff4de8;
       font-weight: bold;
     }
     header {
       text-align: center;
-      color: white;
       padding: 2rem 0;
+      animation: fadeInDown 1s ease forwards;
     }
     header h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
+      font-size: 3rem;
+      font-weight: 900;
+      background: linear-gradient(to right, #d946ef, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-50px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    section {
+      animation: fadeIn 1.5s ease;
+    }
+    ul li {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
+
 <body class="p-6">
 
 <header>
-  <h1>🔥 Tuttio Soleil 01 Electric Bike 🔥</h1>
-  <p class="text-gray-300">Your ultimate budget e-bike build with upgrades & extras!</p>
+  <h1>Tuttio Soleil 01 Electric Bike</h1>
+  <p class="text-gray-400 mt-2">Custom Build | Upgrades | Legal Kit</p>
 </header>
 
 <main class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -70,38 +95,30 @@
   <!-- Upgrades -->
   <section class="card">
     <h2 class="text-2xl font-bold mb-4">Upgrades</h2>
-    <ul class="space-y-3">
-      <li><strong>Bluetooth Dongle</strong> (GBP 25.85) <br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+    <ul>
+      <li><strong>Bluetooth Dongle</strong> (GBP 25.85)<br>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Grips</strong> (GBP 6.00)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Front Fender</strong> (GBP 27.03)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Rear Fender</strong> (GBP 18.77)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Number Plate</strong> (GBP 19.52)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>UnderGlow</strong> (GBP 12.01)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Front Plate</strong> (GBP 7.89)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Seat Cover</strong> (GBP 18.99)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
     </ul>
   </section>
@@ -109,18 +126,15 @@
   <!-- Extras -->
   <section class="card">
     <h2 class="text-2xl font-bold mb-4">Extras</h2>
-    <ul class="space-y-3">
+    <ul>
       <li><strong>Helmet</strong> (GBP 74.47)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Gloves</strong> (GBP 18.73)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Chest Bag</strong> (GBP 26.99)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
     </ul>
   </section>
@@ -128,32 +142,26 @@
   <!-- Legal Kit -->
   <section class="card">
     <h2 class="text-2xl font-bold mb-4">Legal Kit (UK)</h2>
-    <ul class="space-y-3">
-      <li><strong>Number Plate</strong></li>
-      <li><strong>Insurance</strong></li>
-      <li><strong>Licence</strong></li>
-      <li><strong>MOT Test</strong></li>
-      <li><strong>VIN</strong></li>
+    <ul>
+      <li>Number Plate</li>
+      <li>Insurance</li>
+      <li>Licence</li>
+      <li>MOT Test</li>
+      <li>VIN</li>
       <li><strong>Headlight</strong> (GBP 33.99)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Mirrors</strong> (GBP 19.99)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Horn/Control Panel</strong> (GBP 22.96)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
-      <li><strong>Speedometer</strong> (GBP 37.18)</li>
       <li><strong>Brake Light</strong> (GBP 21.99)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
       <li><strong>Indicators</strong> (GBP 17.99)<br>
-        <a href="#" class="link-button">Mazon</a>
-        <a href="#" class="link-button">Alixpress</a>
+        <a href="#" class="link-button">Amazon</a><a href="#" class="link-button">Alixpress</a>
       </li>
     </ul>
   </section>
@@ -161,39 +169,7 @@
   <!-- Prices -->
   <section class="card">
     <h2 class="text-2xl font-bold mb-4">Prices</h2>
-    <ul class="space-y-2">
+    <ul>
       <li>Just Bike: <span class="price">1,051.60 GBP</span></li>
       <li>Bike + Upgrades: <span class="price">1,314.82 GBP</span></li>
-      <li>Bike + Extras: <span class="price">1,171.79 GBP</span></li>
-      <li>Extras + Upgrades: <span class="price">383.41 GBP</span></li>
-      <li>Bike + Upgrades + Extras: <span class="price">1,435.01 GBP</span></li>
-      <li>Bike + Upgrades + Extras + Legal Kit: <span class="price">1,589.11 GBP</span></li>
-    </ul>
-  </section>
-
-  <!-- Info -->
-  <section class="card">
-    <h2 class="text-2xl font-bold mb-4">Info & Videos</h2>
-    <p>Bike available at <a href="https://tuttiosport.com/products/tuttio-soleil01-electric-bike" class="link-button" target="_blank">Tuttio Sport</a></p>
-    <p>This build focuses on budget performance and looks but upgrades can make it even crazier 🔥</p>
-    <p>Check videos:</p>
-    <ul class="space-y-2">
-      <li><a href="https://www.youtube.com/watch?v=46ULECKE5zw" class="link-button" target="_blank">Phethanfix Video</a></li>
-      <li><a href="https://www.youtube.com/watch?v=0i6LCu_hQro" class="link-button" target="_blank">Surronster Video</a></li>
-    </ul>
-  </section>
-
-  <!-- Legal Info -->
-  <section class="card">
-    <h2 class="text-2xl font-bold mb-4">Legal Info</h2>
-    <p>Video on 2025 e-bike laws:</p>
-    <ul class="space-y-2">
-      <li><a href="https://www.youtube.com/watch?v=XgFj8VoRjvA" class="link-button" target="_blank">Legal Video</a></li>
-    </ul>
-    <p>Road legal kit needs: headlight, mirrors, indicators, speedometer, horn, and registration + insurance + MOT.</p>
-  </section>
-
-</main>
-
-</body>
-</html>
+      <li>Bike + Extras: <span class="price">1,171.
