@@ -1,143 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuttio Soleil 01 Bike</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 10px;
-            background-color: white;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #333;
-        }
-        .price {
-            font-weight: bold;
-            color: #e74c3c;
-        }
-        .link {
-            color: #3498db;
-            text-decoration: none;
-        }
-        .link:hover {
-            text-decoration: underline;
-        }
-        .upgrade-list, .extra-list, .legal-list, .price-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .upgrade-list li, .extra-list li, .legal-list li, .price-list li {
-            margin: 8px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tuttio Soleil 01 Bike</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .link-button {
+      background: #3498db;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-right: 0.5rem;
+    }
+    .link-button:hover {
+      background: #2980b9;
+    }
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    header {
+      text-align: center;
+      color: white;
+      padding: 2rem 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body>
+<body class="p-6">
 
 <header>
-    <h1>Tuttio Soleil 01 Electric Bike</h1>
+  <h1>🔥 Tuttio Soleil 01 Electric Bike 🔥</h1>
+  <p class="text-gray-300">Your ultimate budget e-bike build with upgrades & extras!</p>
 </header>
 
-<section>
-    <h2>Bike Specs:</h2>
+<main class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+  <!-- Bike Specs -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Bike Specs</h2>
     <p><strong>Top Speed:</strong> 37Mph (60Km/h)</p>
     <p><strong>Range:</strong> 45 Miles</p>
     <p><strong>Motor:</strong> 48V 2000W Brushless Motor 200N.m</p>
     <p><strong>Battery:</strong> 48V 21Ah Lithium-ion Battery</p>
-    <p class="price">1,051.60 GBP</p>
-    <p><strong>Use Code:</strong> "Phethanfix"</p>
-</section>
+    <p class="price text-xl mt-2">1,051.60 GBP</p>
+    <p class="mt-2"><strong>Use Code:</strong> "Phethanfix"</p>
+  </section>
 
-<section>
-    <h2>Upgrades:</h2>
-    <ul class="upgrade-list">
-        <li><strong>(Bluetooth Dongle)</strong> Keenso Motorcycle Bluetooth Module (GBP 25.85)</li>
-        <li><strong>(Grips)</strong> Worldmotop Motorcycle Handlebar Grips (Black) (GBP 6.00)</li>
-        <li><strong>(Front Fender)</strong> JFG RACING Front Fender (Carbon) (GBP 27.03)</li>
-        <li><strong>(Rear Fender)</strong> JFG RACING Sur Ron Rear Fender (Carbon) (GBP 18.77)</li>
-        <li><strong>(Number Plate)</strong> LINGQI Racing Carbon Fiber Front Number Plate (Carbon) (GBP 19.52)</li>
-        <li><strong>(UnderGlow)</strong> 4PCS Wireless LED Strobe Lights (GBP 12.01)</li>
-        <li><strong>(UnderGlow)</strong> 4PCS Wireless LED Strobe Lights (GBP 12.01)</li>
-        <li><strong>(Front Plate)</strong> Sur Ron Front Number Plate (Black) (GBP 7.89)</li>
-        <li><strong>(Seat)</strong> FG RACING Dirt Bike Seat Cover (Black-s) (GBP 18.99)</li>
+  <!-- Upgrades -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Upgrades</h2>
+    <ul class="space-y-3">
+      <li><strong>Bluetooth Dongle</strong> (GBP 25.85) <br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Grips</strong> (GBP 6.00)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Front Fender</strong> (GBP 27.03)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Rear Fender</strong> (GBP 18.77)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Number Plate</strong> (GBP 19.52)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>UnderGlow</strong> (GBP 12.01)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Front Plate</strong> (GBP 7.89)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Seat Cover</strong> (GBP 18.99)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>Extras:</h2>
-    <ul class="extra-list">
-        <li><strong>(Helmet)</strong> Mongoose Title Full Face Team Issue Bike Helmet (Black) (GBP 74.47)</li>
-        <li><strong>(Gloves)</strong> Fox Racing Mens Ranger Glove Gel (Black) (GBP 18.73)</li>
-        <li><strong>(Chest Bag)</strong> Running Chest Bag for Men Women (GBP 26.99)</li>
+  <!-- Extras -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Extras</h2>
+    <ul class="space-y-3">
+      <li><strong>Helmet</strong> (GBP 74.47)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Gloves</strong> (GBP 18.73)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Chest Bag</strong> (GBP 26.99)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>Legal (UK):</h2>
-    <ul class="legal-list">
-        <li><strong>Number Plate</strong></li>
-        <li><strong>Insurance</strong></li>
-        <li><strong>Licence</strong></li>
-        <li><strong>MOT Test</strong></li>
-        <li><strong>Vehicle Identification Number (VIN)</strong></li>
-        <li><strong>(Headlight)</strong> JFG RACING Motorcycle Headlight (Black-3) (GBP 33.99)</li>
-        <li><strong>(Mirrors)</strong> Motorcycle Rearview Mirror, 1 Pair Aluminum (GBP 19.99)</li>
-        <li><strong>(Horn/Control Panel)</strong> FSFY Motorcycle Handlebar Control Switch (GBP 22.96)</li>
-        <li><strong>(Speedometer)</strong> Rtauhife LCD Display Speedometer (GBP 37.18) (Already comes with one stock)</li>
-        <li><strong>(Rear Brake Light)</strong> Rear Brake Light Tail Brake (GBP 21.99)</li>
-        <li><strong>(Indicators)</strong> Kinstecks 4PCS Motorcycle Indicators Flowing Turn Signal (GBP 17.99)</li>
+  <!-- Legal Kit -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Legal Kit (UK)</h2>
+    <ul class="space-y-3">
+      <li><strong>Number Plate</strong></li>
+      <li><strong>Insurance</strong></li>
+      <li><strong>Licence</strong></li>
+      <li><strong>MOT Test</strong></li>
+      <li><strong>VIN</strong></li>
+      <li><strong>Headlight</strong> (GBP 33.99)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Mirrors</strong> (GBP 19.99)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Horn/Control Panel</strong> (GBP 22.96)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Speedometer</strong> (GBP 37.18)</li>
+      <li><strong>Brake Light</strong> (GBP 21.99)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
+      <li><strong>Indicators</strong> (GBP 17.99)<br>
+        <a href="#" class="link-button">Mazon</a>
+        <a href="#" class="link-button">Alixpress</a>
+      </li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>Prices:</h2>
-    <ul class="price-list">
-        <li>Just Bike: <span class="price">1,051.60 GBP</span></li>
-        <li>Bike + Upgrades: <span class="price">1,314.82 GBP</span></li>
-        <li>Bike + Extras: <span class="price">1,171.79 GBP</span></li>
-        <li>Extras + Upgrades: <span class="price">383.41 GBP</span></li>
-        <li>Bike + Upgrades + Extras: <span class="price">1,435.01 GBP</span></li>
-        <li>Bike + Upgrades + Extras + Legal Kit: <span class="price">1,589.11 GBP</span></li>
+  <!-- Prices -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Prices</h2>
+    <ul class="space-y-2">
+      <li>Just Bike: <span class="price">1,051.60 GBP</span></li>
+      <li>Bike + Upgrades: <span class="price">1,314.82 GBP</span></li>
+      <li>Bike + Extras: <span class="price">1,171.79 GBP</span></li>
+      <li>Extras + Upgrades: <span class="price">383.41 GBP</span></li>
+      <li>Bike + Upgrades + Extras: <span class="price">1,435.01 GBP</span></li>
+      <li>Bike + Upgrades + Extras + Legal Kit: <span class="price">1,589.11 GBP</span></li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>Info:</h2>
-    <p>Every item is on Amazon other than the actual bike, which is available on <a href="https://tuttiosport.com/products/tuttio-soleil01-electric-bike" class="link" target="_blank">Tuttio Sport</a>.</p>
-    <p>This is a good budget build, but to make it better, it's pretty expensive with upgrades like a 72V system, supermoto tyres, and a new motor. If you can afford that, this bike will be really good.</p>
-    <p>This build is designed to look great and provide speed. However, if you add the legal pack to ride it on the road, it might not look as cool.</p>
-    <p>Lastly, none of these upgrades are tested yet. I'll be posting videos of them as I work on the project. This is something I am building.</p>
-    <p>Here are videos on the bike:</p>
-    <ul>
-        <li><a href="https://www.youtube.com/watch?v=46ULECKE5zw" class="link" target="_blank">Phethanfix Video</a></li>
-        <li><a href="https://www.youtube.com/watch?v=0i6LCu_hQro" class="link" target="_blank">Surronster Video</a></li>
+  <!-- Info -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Info & Videos</h2>
+    <p>Bike available at <a href="https://tuttiosport.com/products/tuttio-soleil01-electric-bike" class="link-button" target="_blank">Tuttio Sport</a></p>
+    <p>This build focuses on budget performance and looks but upgrades can make it even crazier 🔥</p>
+    <p>Check videos:</p>
+    <ul class="space-y-2">
+      <li><a href="https://www.youtube.com/watch?v=46ULECKE5zw" class="link-button" target="_blank">Phethanfix Video</a></li>
+      <li><a href="https://www.youtube.com/watch?v=0i6LCu_hQro" class="link-button" target="_blank">Surronster Video</a></li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>Legal Info:</h2>
-    <p>Here is a video on the legal side of e-bikes (2025):</p>
-    <ul>
-        <li><a href="https://www.youtube.com/watch?v=XgFj8VoRjvA" class="link" target="_blank">Legal Video</a></li>
+  <!-- Legal Info -->
+  <section class="card">
+    <h2 class="text-2xl font-bold mb-4">Legal Info</h2>
+    <p>Video on 2025 e-bike laws:</p>
+    <ul class="space-y-2">
+      <li><a href="https://www.youtube.com/watch?v=XgFj8VoRjvA" class="link-button" target="_blank">Legal Video</a></li>
     </ul>
-    <p>To make a dirt bike road legal, you’ll need to install essentials like headlights, tail lights, indicators, mirrors, a speedometer, and a horn. You'll also need to register the bike with the DVLA, ensure it passes an MOT (if it’s over three years old), and get it insured.</p>
-</section>
+    <p>Road legal kit needs: headlight, mirrors, indicators, speedometer, horn, and registration + insurance + MOT.</p>
+  </section>
+
+</main>
 
 </body>
 </html>
